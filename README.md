@@ -3,10 +3,19 @@
 
 #Titulo
 
-Hola que tal
+TAREAS
 
-##Titulo
-que bien
+##TAREA1
+CREAR UN REPOSITORIO DE GITHUB
 
-### Loos 
-que hace
+### TAREA 2
+EJERCICIO DE MARKDOWN EN GITHUB
+
+#### TAREA 3
+PROGRAMA BASICO DE PELICULAS
+
+##### TAREA 4
+lISTA DE PELICULAS
+
+###### TAREA 5
+ACTORES
