@@ -54,9 +54,9 @@ namespace peliculas
 	{
 		static void Main(string[] args)
 		{
-			Pelicula p1 = new Pelicula("pelicula1", 2007);
-			p1.AgregarActor(new Actor("pelicula2", 1970));
-			p1.AgregarActor(new Actor("pelicula3", 1982));
+			Pelicula p1 = new Pelicula("La La Land", 2016);
+			p1.AgregarActor(new Actor("Ryan Gosling", 1980));
+			p1.AgregarActor(new Actor("Emma Stone", 1988));
 
 			p1.ImprimeActores();
 		}
