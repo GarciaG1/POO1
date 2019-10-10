@@ -21,6 +21,21 @@ namespace juego_delavida
             this.columnas=columnas;
             this.tablero=tablero;
         }
+        public void actualiza_estado(){
+
+        }
+        public short num_vecinas(){
+            short cuenta=0;
+            //1
+            //grid [renglon-1][columna-1]
+                if(renglon>0 && columna > 0)
+                {
+                   if( tablero.grid[renglon-1][columna-1].estado_actual==Estado.viva)
+                   cuenta++;
+                }
+             return cuenta;
+        }
+
         public void print(){
             if(this.estado_actual == Estado.vacia){
                 //vacio
@@ -39,22 +54,23 @@ namespace juego_delavida
     }
     class Tablero
     {
-        private List <List<Celula >>    grid;
-        public Tablero(){
+        public List <List<Celula >>    grid;
+        public Tablero(short num_renglon,short num_columnas){
+
             grid = new List<List<Celula>>();
-            grid.Add ( new List<Celula>());
-
-            grid[0].Add(new Celula(Estado.viva,this,0,0));
-            grid[0].Add(new Celula(Estado.vacia,this,0,1));
-             grid[0].Add(new Celula(Estado.vacia,this,0,2));
-
-             grid[0].Add(new Celula(Estado.vacia,this,1,0));
-            grid[0].Add(new Celula(Estado.vacia,this,1,1));
-             grid[0].Add(new Celula(Estado.viva,this,1,2));
-
-             grid[0].Add(new Celula(Estado.vacia,this,2,0));
-            grid[0].Add(new Celula(Estado.vacia,this,2,1));
-             grid[0].Add(new Celula(Estado.vacia,this,2,2));
+           
+            for(short i=0; i<=num_renglon; i++)
+            {
+                grid.Add ( new List<Celula>());
+                for(short j=0; j<=num_columnas; j++)
+                {
+                        grid[i].Add(new Celula(Estado.viva,this,i,j));
+                }
+            }
+            public void inserta(Celula c){
+                grid.[c.renglon][c.columnas]=c;
+            }
+            
         }
         public void print(){
              foreach ( List<Celula> renglon in grid){
@@ -75,8 +91,14 @@ namespace juego_delavida
               Console.WriteLine("--|");
               Console.WriteLine("--|");
               */
-              Tablero juego_delavida = new Tablero();
+              Tablero juego_delavida = new Tablero(10,5);
+              juego_delavida.inserta(new Celula(Estado.viva,juego_delavida,3,3));
+              juego_delavida.inserta(new Celula(Estado.viva,juego_delavida,3,2));
+              juego_delavida.inserta(new Celula(Estado.viva,juego_delavida,3,1));
+              
               juego_delavida.print();
+              console.WriteLine(juego_delavida.inserta(new Celula(Estado.viva,juego_delavida,0,0));
+              juego_delavida.grid[1][1].num_vecinas());
         }
     } 
 }
