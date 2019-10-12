@@ -2,8 +2,9 @@
 
 namespace Duracion
 {
-class Duracion 
+    class Duracion 
 {
+    
     public int horas;
     public int minutos;
     public int segundos;
@@ -13,77 +14,44 @@ public Duracion (int h,int m,int s)
      this.minutos=m;
      this.segundos=s;
  } 
- public void print ()
+ public Duracion (int s)  
  {
-     Console.WriteLine("Duracion="+horas+":"+minutos+":"+segundos);
-    convertir();
-    Console.WriteLine("Minutos="+minutos);
-    Console.WriteLine("Segundos="+segundos);
+     
+     
+    this.segundos=s;
+ } 
+ public void print()
+ {
+     Console.WriteLine("Duracion= ["+horas+":"+minutos+":"+segundos+"]");
  }
- public void convertir()
+  
+ public int get_minutos ()
  {
-     minutos=horas*60 + minutos;
-     segundos= (minutos*60) + (horas*3600)+segundos;
-
+     int m;
+     m=minutos=(horas*60) + minutos;
+    return m;
+    
+ }
+  public int  get_segundos()
+ {  int s;
+     s= (minutos*60) + (horas*3600)+segundos;
+   
+     
+    return s;
  }
 }
+
 class Program
     {
         static void Main(string[] args)
         {
-          Duracion conversion=new Duracion(03,20,10);
-         conversion.print();  
+          Duracion Total=new Duracion(03,20,10);
+         
+         
+         Total.print();  
+        Console.WriteLine("segundos:"+Total.get_segundos());
+        Console.WriteLine("minutos:"+Total.get_minutos());
 
         }
-    } 
-
- 
+    }
 }
-
-/*class Duracion 
-    {
-        public int horas=2;
-        public int minutos=15;
-        public int segundos=10;
-
-    public Duracion (int h,int m,int s)
-    {
-        //minutos=new  minutos()
-
-       
-        this.segundos=s;
-        this.horas= h;
-        this.minutos=m;
-        
-        
-    }
-    public Duracion (int s)
-    {
-       // minutos= horas*60;
-        //segundos = minutos*3600;
-        segundos=s;
-        
-    }
-    public  int get_minutos(int s)
-    {
-        return s;
-    }
-    public void print_segundos ()
-    {
-       Console.WriteLine(segundos) ;
-    }
-    public int  print_minutos()
-    {
-           return minutos;
-    }
-
-    public void print_horas ()
-    {
-       Console.WriteLine(horas) ;
-    }
-     
-
-
-    }
-    */
-    
