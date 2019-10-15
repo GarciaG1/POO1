@@ -1,21 +1,32 @@
-# POO
- Curso de POO del TEC
+# INSTITUTO TECNOLÓGICO DE TIJUANA
+ 
+![Logo:](http://tectijuana.edu.mx/wp-content/plugins/website-logo/images/logo_ITT1.png)
 
-#Titulo
+ ## Garcia Perez Gabriel
+ ## Materia: Programacion Orientada a objetos
+ ## 19210493
+ ## Programacion Orientada a Objetos.
 
-TAREAS
+ ### Docente: Valdez Garcia Mario
 
-##TAREA1
-CREAR UN REPOSITORIO DE GITHUB
 
-### TAREA 2
-EJERCICIO DE MARKDOWN EN GITHUB
+ #### EVIDENCIAS:
 
-#### TAREA 3
-PROGRAMA BASICO DE PELICULAS
 
-##### TAREA 4
-lISTA DE PELICULAS
+[https://github.com/GarciaG1/POO1/tree/master/t1](practica-1/)
 
-###### TAREA 5
-ACTORES
+[https://github.com/GarciaG1/POO1/tree/master/p12](Tarea1/)   
+
+[https://github.com/GarciaG1/POO1/tree/master/espias](espias/)
+
+[https://github.com/GarciaG1/POO1/tree/master/setup](Setup/) 
+
+[https://github.com/GarciaG1/POO1/tree/master/PELICULA](Programa_Peliculas/ Lista peliculas / actores)
+
+[https://github.com/GarciaG1/POO1/tree/master/padre](Trabajo_asistencia/)
+
+[https://github.com/GarciaG1/POO1/tree/master/PARAMETROS](Parametros/)
+
+
+
+
