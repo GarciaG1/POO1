@@ -15,7 +15,7 @@
 
 1. [Trabajo1](https://github.com/GarciaG1/POO1/tree/master/t1)
 
-2. [T1](https://github.com/GarciaG1/POO1/tree/master/p12)   
+2. [p1](https://github.com/GarciaG1/POO1/tree/master/p12)   
 
 3. [espias](https://github.com/GarciaG1/POO1/tree/master/espias/)
 
