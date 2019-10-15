@@ -13,19 +13,19 @@
  #### EVIDENCIAS:
 
 
-[https://github.com/GarciaG1/POO1/tree/master/t1](.practica-1/)
+[Trabajo1](https://github.com/GarciaG1/POO1/tree/master/t1)
 
-[https://github.com/GarciaG1/POO1/tree/master/p12](.Tarea1/)   
+[Tarea1](https://github.com/GarciaG1/POO1/tree/master/p12)   
 
-[https://github.com/GarciaG1/POO1/tree/master/espias](.espias/)
+[espias](https://github.com/GarciaG1/POO1/tree/master/espias/)
 
-[https://github.com/GarciaG1/POO1/tree/master/setup](.Setup/) 
+[setup](https://github.com/GarciaG1/POO1/tree/master/setup) 
 
-[https://github.com/GarciaG1/POO1/tree/master/PELICULA](.Programa_Peliculas/)
+[Pelicula](https://github.com/GarciaG1/POO1/tree/master/PELICULA)
 
-[https://github.com/GarciaG1/POO1/tree/master/padre](.Trabajo_asistencia/)
+[padre](https://github.com/GarciaG1/POO1/tree/master/padre)
 
-[https://github.com/GarciaG1/POO1/tree/master/PARAMETROS](.Parametros/)
+[parametros](https://github.com/GarciaG1/POO1/tree/master/PARAMETROS)
 
 
 
