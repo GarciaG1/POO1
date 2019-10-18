@@ -1,0 +1,35 @@
+using System;
+
+namespace Domino
+{
+    class Domino{
+        private int side1;
+        private int side2;
+    
+        public Domino (int s1, int s2)
+        {
+         this.side1=s1;
+         this.side2=s2;
+        }
+
+         public static int operator +(Domino l1, Domino l2)
+        {
+             return (l1.side1+l2.side1+l1.side2+l2.side2);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Program Domino");
+            Console.WriteLine("");
+            //objects
+            Domino l1= new Domino(5,4);
+            Domino l2= new Domino(3,0);
+           
+            Console.WriteLine("The result of the sum is: "+ (l1+l2));
+        }
+
+        
+    }
+}
