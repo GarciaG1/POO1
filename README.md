@@ -12,21 +12,25 @@
 
  #### EVIDENCIAS:
 
+ ##### Unidad 1:
+
 
 1. [Trabajo1](https://github.com/GarciaG1/POO1/tree/master/t1)
 
-2. [p1](https://github.com/GarciaG1/POO1/tree/master/p1)   
+2. [Bici](https://github.com/GarciaG1/POO1/tree/master/p1)   
+
+3. [setup](https://github.com/GarciaG1/POO1/tree/master/setup) 
+
+4. [Pelicula](https://github.com/GarciaG1/POO1/tree/master/PELICULA)
+
+
+ ##### Unidad 2:
+
+1. [Componentes](https://github.com/GarciaG1/POO1/tree/master/padre)
+
+2. [parametros](https://github.com/GarciaG1/POO1/tree/master/PARAMETROS)
 
 3. [espias](https://github.com/GarciaG1/POO1/tree/master/espias/)
-
-4. [setup](https://github.com/GarciaG1/POO1/tree/master/setup) 
-
-5. [Pelicula](https://github.com/GarciaG1/POO1/tree/master/PELICULA)
-
-6. [padre](https://github.com/GarciaG1/POO1/tree/master/padre)
-
-7. [parametros](https://github.com/GarciaG1/POO1/tree/master/PARAMETROS)
-
 
 
 
