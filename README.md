@@ -36,7 +36,7 @@
 
 5. [Duracion](https://github.com/GarciaG1/POO1/tree/master/Duracion)
 
-6.[Duracion](https://github.com/GarciaG1/POO1/tree/master/Duracion)
+ 6.[Domino](https://github.com/GarciaG1/POO1/blob/master/Program.cs)
 
 
 
