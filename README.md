@@ -32,5 +32,14 @@
 
 3. [espias](https://github.com/GarciaG1/POO1/tree/master/espias/)
 
+4. [Gol](https://github.com/GarciaG1/GOL)
+
+5. [Duracion](https://github.com/GarciaG1/POO1/tree/master/Duracion)
+
+ 6.[Domino](https://github.com/GarciaG1/POO1/blob/master/Program.cs)
+
+
+
+
 
 
