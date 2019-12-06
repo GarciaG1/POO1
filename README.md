@@ -43,7 +43,7 @@
  ##### Unidad 
  1.[stack](https://github.com/GarciaG1/POO1/blob/master/Stack/Program.cs)
 
- 2.[stack](https://github.com/GarciaG1/POO1/blob/master/cola/Program.cs)
+ 2.[cola](https://github.com/GarciaG1/POO1/blob/master/cola/Program.cs)
 
 
 
