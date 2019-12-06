@@ -3,55 +3,106 @@ using System.Collections.Generic;
 
 namespace Figuras
 {
+    //clase abstracta
     abstract class Figura
     {
-         protected  int ancho,alto;
-        //coordenada de la figura
-        protected int px,py;
-        protected string color_relleno,color_borde;
-        //grosor del borde
-        public Figuras (string ancho,string alto, string px, string py, string color_borde,string color_relleno)
+         
+        //Tamaño de la figura
+        protected int py;
+        protected  double px;
+        //color de la figura
+        protected string color;
+         protected double a;
+        
+        //constructor
+        public Figura ( double x, int y, string col)
         {
-            this.ancho=ancho;
-            this.alto=ancho;
-            this.px=px;
-            this.py=py;
-            this.color_borde=color_borde;
-            this.color_relleno=color_relleno;
+           
+            px=x;
+            py=y;
+            color=col;
+            
+        
         }
-        public abstract dibuja();
-
-        public void area ()
-        {
-            console.WriteLine("Seleccione la figura: (1-. Rectangulo 2-. Circulo 3-. linea");
-            f=string.parse(console.readline());
-            switch(f)
-            {
-                
-                
-                default:
-            }
-        }
+        //metodo dibuja
+        public abstract void  dibuja();
+        //metodo area
+        public abstract void area ();
+        
         
     }
-    class Rectangulo:Figuras
+    //clase Rectangulo que hereda de Figura
+    class Rectangulo:Figura
     
     {
-        public rectangulo(): base()
-        {}
+        //constructor 
+        //base sirve para invocar las variables de la clase figura 
+        public Rectangulo(double x,int y, string col): base(x,y,col)
+        {
+            
+
+        }
+        //metodo dibuja
+        //imprime el color y tamaño de la figura
         public override void dibuja(){
-            console.WriteLine("Se dibuja un rectangulo color{0},en x:{1} y Y:{2}",color_relleno,px,py);
+            Console.WriteLine("Se dibuja un rectangulo color: {0},de base: {1} y de largo: {2}",color,px,py);
+        }
+        //metodo area
+        //imprime el area de la figura
+        public override void area(){
+           
+            a= (px*py)/2;
+            Console.WriteLine("El area es de b*h/2= "+a);
         }
     }
     
     
-    }
-    class Program
+    // clase circulo que hereda de la clase 
+    class Circulo:Figura
+    
     {
-        static void Main(string[] args)
+        //constructor 
+        //base sirve para invocar las variables de la clase figura 
+        public Circulo(double x,int y, string col): base(x,y,col)
         {
-            List<Figura> figuras=new list<figura>();
-            figuras.Add(new Rectangulo(10,10));
+            
+
+        }
+        //metodo dibuja
+        public override void dibuja(){
+            Console.WriteLine("Se dibuja un circulo color: {0},de base: {1} y de largo: {2}",color,px,py);
+        }
+        //metodo area
+        public override void area(){
+           
+            a= px*(py*py);
+            Console.WriteLine("El area es de pi*r^2="+a);
+        }
+    }
+    
+    
+    
+    class Program
+    {   //Main
+        static void Main(string[] args)
+        {   // Se crean los Objetos
+            Rectangulo re= new Rectangulo(2,4,"Verde");
+            Rectangulo re2=new Rectangulo(3,7,"Azul");
+            Circulo ci= new Circulo(3.15,4,"Negro");
+            Circulo ci2= new Circulo(3.15,6,"Rojo");
+
+            // lista de figuras
+            List<Figura> figu=new List<Figura>();
+            figu.Add(re);
+            figu.Add(re2);
+            figu.Add(ci);
+            figu.Add(ci2);
+            //Dibuja e imprime el area de cada figura
+            foreach( Figura Fi in figu)
+            {
+                Fi.dibuja();
+                Fi.area();
+            }
         }
     }
 }

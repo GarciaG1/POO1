@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 
 namespace Musico
-{  //clase principal
-    class Musico 
+{  //clase abstract  Musico
+    // La clase abstracta obliga a las clases derivadas 
+    //de la misma a implementar los metodos y constructores utilizados en esta clase
+    abstract class Musico 
     {       
             //protected sirve para que otras clases la hereden y la puedan usar
             protected string nombre;
@@ -11,24 +13,17 @@ namespace Musico
             public Musico (string n)
             {
                 nombre=n;
+               ;
             }
             //metodo saluda
             //virtual sirve para crear otro metodo con el mismo nombre pero con contenido distinto
-            public virtual string saluda()
-            {
-                //saludo
-            return string.Format ("Hola soy {0}",nombre);
-
-            }
+            public abstract void saluda();
+            
         //public void afina(){
             //metodo afina
-        public virtual void afina ()
-        {
-            // nombre e instrumento
-        Console.WriteLine("{0}, afina su instrumento ",nombre);
-        }
-    }           //Clase que hereda de Musico        
-            class Bajista:Musico
+        public abstract void afina ();
+    }
+    class Bajista: Musico 
     {
         private string bajo;
         //constructor 
@@ -45,9 +40,31 @@ namespace Musico
               Console.WriteLine("{0} afina su bajo {1}",nombre,bajo);
              }
          
-              public override string saluda()
+              public override void saluda()
                {
-                return base.saluda()+" y soy bajista";
+                Console.WriteLine("soy {0} y soy bajista",nombre);
+              }
+    }
+    class Baterista: Musico 
+    {
+        private string bateria;
+        //constructor 
+        //base: Su funcion es mandar a llamar las variables de la clase que estamos heredando
+        public Baterista (string nom,string ba):base(nom)
+        {
+
+            this.bateria=ba;
+        }
+    
+        //public new void afina(){
+             public override void  afina()
+             {
+              Console.WriteLine("{0} prepara su bateria {1}",nombre,bateria);
+             }
+         
+              public override void saluda()
+               {
+                Console.WriteLine("soy {0} y soy baterista",nombre);
               }
     }
     //Clase que hereda de Musico  
@@ -66,10 +83,10 @@ namespace Musico
             Console.WriteLine("{0} ,afina su guitarra {1}",nombre,guitarra);
         }
         //metodo saluda
-        public override string saluda()
+        public override void saluda()
         {
-            
-            return base.saluda()+" y soy guitarrista";
+            Console.WriteLine("soy {0} y soy guitarrista",nombre);
+           ;
         }
         
      }
@@ -79,7 +96,7 @@ namespace Musico
     {   //main
         static void Main(string[] args)
         {   //objetos
-            Musico Gabriel = new Musico("Gabriel");
+            Musico Gabriel = new Baterista("Gabriel","Yamaha");
             Bajista Garcia = new Bajista("Garcia","Gibson");
             Guitarrista Angel= new Guitarrista("Angel","Paracho");
             
@@ -91,13 +108,14 @@ namespace Musico
             //estructura repetitiva
             foreach (Musico m in grupo)
             {
-                Console.WriteLine(m.saluda());
+               m.saluda();
                 m.afina();
             }
             
                 
             
         }
-    }   
+    }    
+    
 }   
 
