@@ -1,0 +1,11 @@
+GGP 723|Camisa Rayada |500
+RFD 435|Camisa verde|400
+GDE 634|Cinturon negro|250
+HJR 664|Balon de futbol|200
+GFD 742|jersey oficial chivas|1500
+CXZ 764|Jersey oficial Seleccion Mexicana|800
+50
+HJR 664|Balon de futbol|200
+GFD 742|jersey oficial chivas|1500
+CXZ 764|Jersey oficial Seleccion Mexicana|800
+l Seleccion Mexicana|800
