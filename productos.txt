@@ -1,0 +1,12 @@
+AQW|Lapiz Azul w2 |12.23
+AQE|Lapiz Verde w3|12.23
+GEW|Pluma Azul w4|12.23
+ERW|Borrador ww2|10.33
+RWW|Computadora|5000
+T3W|Pantalla|1200
+GGP 723|Camisa Rayada |500
+RFD 435|Camisa verde|400
+GDE 634|Cinturon negro|250
+HJR 664|Balon de futbol|200
+GFD 742|jersey oficial chivas|1500
+CXZ 764|Jersey oficial Seleccion Mexicana|800
