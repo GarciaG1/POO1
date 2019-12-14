@@ -59,7 +59,7 @@ namespace ProyectoP4
         }
 
 
-        public static void EscribeProductosTXT(string archivo, List<Producto> productos)
+        public  void EscribeProductosTXT(string archivo, List<Producto> productos)
         {
          try{
                 FileStream fs = new FileStream(archivo , FileMode.OpenOrCreate, FileAccess.Write);
@@ -68,7 +68,7 @@ namespace ProyectoP4
                 foreach(Producto p in productos)
                     {
             
-                      txtOut.WriteLine("|{0}|{1}|{2}|{3}|{4}|",p.codigo,p.descripcion,p.precio,p.departamento,p.likes);
+                      txtOut.WriteLine("{0}|{1}|{2}|{3}|{4}",p.codigo,p.descripcion,p.precio,p.departamento,p.likes);
                     }
                         txtOut.Close();
             }
@@ -80,7 +80,7 @@ namespace ProyectoP4
 
         }
     
-       public static List<Producto> LeeProductosBIN(string archivo)
+       public  List<Producto> LeeProductosBIN(string archivo)
         {
            
                  List<Producto> productos = new List<Producto>();  
@@ -112,7 +112,7 @@ namespace ProyectoP4
         
            
         
-              public static List<Producto> LeeProductosTXT(string archivo)
+              public  List<Producto> LeeProductosTXT(string archivo)
         { 
              
              List<Producto> productos = new List<Producto>();        
@@ -184,19 +184,19 @@ namespace ProyectoP4
            ProductoDB lista=new ProductoDB();
             List<Producto> productos = new List<Producto>();
 
-                productos.Add(new Producto("AQW", "Lapiz Azul w2 ", 12.23d, 1, 56));
-				productos.Add(new Producto("AQE", "Lapiz Verde w3", 12.23d, 1, 33));
-				productos.Add(new Producto("GEW", "Pluma Azul w4", 12.23d, 1, 20));
-				productos.Add(new Producto("ERW", "Borrador ww2", 10.33d, 1, 100));
-				productos.Add(new Producto("RWW", "Computadora", 5000.00d, 2, 200));
-				productos.Add(new Producto("T3W", "Pantalla", 1200.00d, 2, 80));
+                lista.productos.Add(new Producto("AQW", "Lapiz Azul w2 ", 12.23d, 1, 56));
+				lista.productos.Add(new Producto("AQE", "Lapiz Verde w3", 12.23d, 1, 33));
+				lista.productos.Add(new Producto("GEW", "Pluma Azul w4", 12.23d, 1, 20));
+				lista.productos.Add(new Producto("ERW", "Borrador ww2", 10.33d, 1, 100));
+				lista.productos.Add(new Producto("RWW", "Computadora", 5000.00d, 2, 200));
+				lista.productos.Add(new Producto("T3W", "Pantalla", 1200.00d, 2, 80));
 
-				productos.Add(new Producto("GGP 723", "Camisa Rayada ", 500.00d, 1, 56));
-				productos.Add(new Producto("RFD 435", "Camisa verde", 400.00d, 1, 33));
-				productos.Add(new Producto("GDE 634", "Cinturon negro", 250.00d, 1, 20));
-				productos.Add(new Producto("HJR 664", "Balon de futbol", 200.00d, 2, 100));
-				productos.Add(new Producto("GFD 742", "jersey oficial chivas", 1500.00d, 2, 200));
-				productos.Add(new Producto("CXZ 764", "Jersey oficial Seleccion Mexicana", 800.00d, 2, 80));
+				lista.productos.Add(new Producto("GGP 723", "Camisa Rayada ", 500.00d, 1, 56));
+				lista.productos.Add(new Producto("RFD 435", "Camisa verde", 400.00d, 1, 33));
+				lista.productos.Add(new Producto("GDE 634", "Cinturon negro", 250.00d, 1, 20));
+				lista.productos.Add(new Producto("HJR 664", "Balon de futbol", 200.00d, 2, 100));
+				lista.productos.Add(new Producto("GFD 742", "jersey oficial chivas", 1500.00d, 2, 200));
+				lista.productos.Add(new Producto("CXZ 764", "Jersey oficial Seleccion Mexicana", 800.00d, 2, 80));
              
              lista.OrdenarLikes();
             lista.GetDepartment(2);
